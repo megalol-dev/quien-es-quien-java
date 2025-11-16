@@ -65,4 +65,29 @@ Aquí podrás ver:
 ---
 
 ## 📂 Estructura del proyecto
+/src
+└─ Elementos_juego
+├─ InterfazJuego.java → Ventana principal + lógica de juego
+├─ Personas.java → Modelo de datos de cada personaje
+├─ GestorPersonas.java → Carga de personajes
 
+/img
+├─ (24 imágenes de personajes)
+├─ (1 imágenes para tachar personajes)
+└─ Iconos opcionales de ejemplo para decorar los botones de las preguntas, esta función no se incluyó finalmente, pero esta todo preparado para si tú quieres implementarlo.
+
+---
+
+## 🧠 Cómo ejecutar el proyecto
+
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/TU-USUARIO/TU-REPO.git
+
+    Abre el proyecto en Eclipse, IntelliJ o NetBeans.
+
+    Ejecuta la clase:
+
+    InterfazJuego.main()
+
+¡Y a jugar!
