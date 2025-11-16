@@ -10,7 +10,7 @@ public class Personas {
 	// imagen del personaje descartado
 	
 	
-	// variables generales de los personajes
+	// Variables generales de los personajes
 	private int id;
 	private String nombre;
 	private boolean esChico;
@@ -30,9 +30,9 @@ public class Personas {
 	private boolean pielIntermedia;
 	private boolean pielOscura;
 	
-	//Variables de graficos para los personajes
-	private String archivoImagen;
-	private String imagenTachado;
+	// Variables de graficos para los personajes
+	private String archivoImagen;	// Para la imagen de cada personje
+	private String imagenTachado;	// Para la imagen general cuando descartamos a un personaje
 	
 
 // Constructor
@@ -72,10 +72,12 @@ public Personas (int id, String nombre, boolean esChico, boolean esChica, boolea
 //metodos
 //-------------------------------------------------------------------------------------------------------------
 
+
+
 //metodo para saber la ID de cada personaje
 public int getId() {
     return id;
-}
+}//end
 
 
 
@@ -198,55 +200,17 @@ return pielOscura;
 
 
 
-//metodo para encontar la ruta de las imagenes
+//metodo para encontar la ruta de la imagen de un personaje
 public String getRutaImagen() {
     return "img/" + archivoImagen;
 }
 
 
-
+//metodo para encontar la ruta de la imagen de personaje descartado
 public String getImagenTachado() {
     return "img/" + imagenTachado;
 }
 
 
-//metodo para comparar si una persona tiene un atributo en particular
-public boolean tieneAtributo(String atributo) {
-	switch (atributo.toLowerCase()) {
-	case "es chico": return this.esChico;
-    case "es chica": return this.esChica;
-    case "lleva gafas": return this.llevaGafas;
-    case "lleva pendientes": return this.llevaPendientes;
-    case "lleva barba": return this.llevaBarba;
-    case "lleva bigote": return this.llevaBigote;
-    case "pecas": return this.pecas;
-    case "pelo rubio": return this.peloRubio;
-    case "pelo moreno": return this.peloMoreno;
-    case "pelo negro": return this.peloNegro;
-    case "ojos claros": return this.ojosClaros;
-    case "ojos oscuros": return this.ojosOscuros;
-    case "ojos desconocidos": return this.ojosDesconocidos;
-    case "piel clara": return this.pielClara;
-    case "piel intermedia": return this.pielIntermedia;
-    case "piel oscura": return this.pielOscura;
-    default: return false;
-	
-	}
-}//end metodo
-
-
-
-//metodo para comprar 2 objetos por su ID
-public boolean equals(Object obj) {
-    if (this == obj) return true;
-    if (obj == null || getClass() != obj.getClass()) return false;
-    Personas otra = (Personas) obj;
-    return this.id == otra.id;
-}//end
-
-//metodo para mostar la ID obtenida (Asi sabemos el personaje que es)
-public int hashCode() {
-    return Integer.hashCode(id);
-}
 
 }//End clase personas

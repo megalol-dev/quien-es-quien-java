@@ -7,9 +7,10 @@ import java.util.List;
 //clase Gestor_personas
 
 public class GestorPersonas {
+	
+	// Lista de personas
 	private List<Personas> persona;
 	
-
 	
 	//Construtor
 	public GestorPersonas() {
@@ -22,7 +23,7 @@ public class GestorPersonas {
 	////																															      ////
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	
-
+	// A continuación se muestran los parametros de cada personje del juego
 	
 	//personaje 1 CAROLINA
 	// -------------------------------------------------------------------------------------------------------------------------------------//
@@ -374,8 +375,8 @@ public class GestorPersonas {
 			false, 	//pecas 
 				
 			false,	//pelo rubio
-			true, 	//pelo moreno
-			false, 	//pelo negro
+			false, 	//pelo moreno
+			true, 	//pelo negro
 				
 			false,	//ojos claros
 			false,	//ojos oscuros
@@ -452,8 +453,8 @@ public class GestorPersonas {
 				false, 	//pecas 
 				
 				false,	//pelo rubio
-				true, 	//pelo moreno
-				false, 	//pelo negro
+				false, 	//pelo moreno
+				true, 	//pelo negro
 				
 				false,	//ojos claros
 				true,	//ojos oscuros
@@ -665,9 +666,6 @@ public class GestorPersonas {
 	}
 	
 	
-	
-
-
 	
 }//End Gestor_personas
 
