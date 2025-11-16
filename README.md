@@ -20,72 +20,70 @@ Al iniciar una partida, el programa elige un personaje al azar de la lista.
 
 ### ✔️ Sistema de preguntas
 Puedes realizar **3 preguntas** (género, pelo, piel, etc.).  
-El juego descartará automáticamente los personajes que no coincidan con la respuesta.
+El juego descartará automáticamente los personajes que no cumplan la condición.
 
 ### ✔️ Modo adivinanza
-Al consumir las preguntas, obtienes **3 intentos** para adivinar el personaje oculto.
+Cuando consumes las preguntas, obtienes **3 intentos** para adivinar el personaje oculto.
 
 ### ✔️ Reinicio automático
-El juego pregunta si quieres volver a jugar o salir tras ganar o perder.
+Tras ganar o perder, el juego te permite volver a jugar o salir.
 
 ### ✔️ Código totalmente refactorizado
 - Métodos más cortos, organizados y comentados.
 - Separación clara entre interfaz, datos y lógica.
-- Mapa `JButton → Persona` para vincular cada botón con su personaje.
-- 24 métodos individuales para cada personaje (muy fácil de editar).
+- Uso de un mapa `JButton → Persona` para vincular cada botón con su personaje.
+- 24 métodos individuales, uno por personaje (muy fácil de editar o ampliar).
 
 ---
 
 ## 🎓 Proyecto ideal para estudiantes de DAW / DAM
 
-Este proyecto te enseña:
+Con este proyecto aprenderás:
 
-- POO aplicada ✔️  
-- Gestión de eventos con `ActionListener` ✔️  
+- Programación Orientada a Objetos (POO) ✔️  
+- Gestión de eventos (`ActionListener`) ✔️  
 - Uso de layouts de Swing (`BorderLayout`, `GridLayout`) ✔️  
-- Manejo de imágenes (`ImageIcon`, escalado, BufferedImage) ✔️  
-- Refactorización avanzada ✔️  
+- Carga y escalado de imágenes (`ImageIcon`, `BufferedImage`) ✔️  
+- Refactorización de código ✔️  
 - Cómo estructurar un proyecto Java real ✔️  
 
-Perfecto para trabajos de clase, prácticas o ampliar tu portfolio.
+Perfecto para prácticas, trabajos de clase o para tu portfolio.
 
 ---
 
-## 🎬 Video explicativo (20 min)
+## 🎬 Vídeo explicativo (20 min)
 
-Aquí podrás ver:
+Incluye:
 
-- El juego funcionando  
+- Demostración del juego funcionando  
 - Explicación detallada del código  
 - Cómo modificar personajes, imágenes y atributos  
-- Cómo extender el juego  
+- Cómo extender o personalizar el juego  
 
 🔗 **ENLACE AL VIDEO:** *(Lo añadirás cuando lo subas)*
 
 ---
 
 ## 📂 Estructura del proyecto
+
+```text
 /src
 └─ Elementos_juego
-├─ InterfazJuego.java → Ventana principal + lógica de juego
-├─ Personas.java → Modelo de datos de cada personaje
-├─ GestorPersonas.java → Carga de personajes
+   ├─ InterfazJuego.java      → Ventana principal + lógica del juego
+   ├─ Personas.java           → Modelo de datos de cada personaje
+   ├─ GestorPersonas.java     → Carga y gestión de la lista de personajes
 
 /img
 ├─ (24 imágenes de personajes)
-├─ (1 imágenes para tachar personajes)
-└─ Iconos opcionales de ejemplo para decorar los botones de las preguntas, esta función no se incluyó finalmente, pero esta todo preparado para si tú quieres implementarlo.
-
+├─ (24 imágenes tachadas para descartar personajes)
+└─ Iconos opcionales para decorar los botones de las preguntas
+   *(esta función no se usó finalmente, pero está preparada por si quieres añadirla)*
+```
 ---
+🧠 Cómo ejecutar el proyecto
 
-## 🧠 Cómo ejecutar el proyecto
-
-1. Clona el repositorio:
-
+Clona el repositorio:
 - git clone https://github.com/TU-USUARIO/TU-REPO.git
-
 - Abre el proyecto en Eclipse, IntelliJ o NetBeans.
-
 - Ejecuta la clase: InterfazJuego.main()
-
-¡Y a jugar!
+- ¡Y a jugar! 🎉😁
