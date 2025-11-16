@@ -1,55 +1,68 @@
-# 🎭 ¿Quién es quién? — Videojuego en Java
+# 📘 ¿Quién es Quién? – Juego en Java (Versión Refactorizada)
 
-Este proyecto es una versión digital y adaptada para **un solo jugador** del clásico juego de mesa **“¿Quién es quién?”**, desarrollada desde cero como parte de mi aprendizaje en el ciclo de **Desarrollo de Aplicaciones Web (DAW)**.
+Proyecto desarrollado en **Java + Swing** que recrea el clásico juego de mesa *“¿Quién es quién?”*.  
+Incluye interfaz gráfica completa, selección aleatoria del personaje oculto, sistema de preguntas, descartes automáticos y modo de adivinanza final.
 
----
-
-## 🕹️ Descripción del juego
-
-En esta versión, el jugador debe descubrir cuál es el **personaje secreto** realizando hasta **3 preguntas** para descartar candidatos.  
-Puedes preguntar por características como si es **chico o chica**, si **lleva gafas**, si **tiene barba**, etc.  
-Después de las 3 preguntas, dispones de **3 intentos** para adivinar quién es el personaje oculto.
-
-- ✅ Si aciertas, el sistema te felicita.  
-- ❌ Si fallas los tres intentos, el juego te revelará quién era el personaje secreto.  
-- 🧩 En la **primera partida**, el sistema mostrará quién es el personaje (modo *debug*), pero esto se puede **desactivar comentando una línea en el código**.
+Esta versión ha sido **refactorizada desde cero** para ser mucho más clara, modular y fácil de modificar.  
+Ideal para estudiantes de **DAW/DAM** que quieran aprender programación orientada a objetos, eventos de Swing y organización de proyectos Java.
 
 ---
 
-## ⚙️ Estructura del proyecto
+## 🧩 Características principales
 
-El juego se compone de **3 clases principales**:
+### ✔️ Interfaz gráfica completa (Swing)
+- Panel de preguntas con 16 botones.
+- Panel de personajes con 24 botones, cada uno con su imagen.
+- Sistema automático para tachar personajes descartados.
 
-1. **`Personas`** → Define los atributos de cada personaje (género, accesorios, cabello, etc.).  
-2. **`GestorPersonas`** → Contiene las 24 instancias de personajes con sus características definidas.  
-3. **`Interface_juego`** → Controla la interfaz gráfica, dibuja el tablero, gestiona los botones y controla el flujo del juego desde inicio hasta fin.
+### ✔️ Personaje oculto aleatorio
+Al iniciar una partida, el programa elige un personaje al azar de la lista.
+
+### ✔️ Sistema de preguntas
+Puedes realizar **3 preguntas** (género, pelo, piel, etc.).  
+El juego descartará automáticamente los personajes que no coincidan con la respuesta.
+
+### ✔️ Modo adivinanza
+Al consumir las preguntas, obtienes **3 intentos** para adivinar el personaje oculto.
+
+### ✔️ Reinicio automático
+El juego pregunta si quieres volver a jugar o salir tras ganar o perder.
+
+### ✔️ Código totalmente refactorizado
+- Métodos más cortos, organizados y comentados.
+- Separación clara entre interfaz, datos y lógica.
+- Mapa `JButton → Persona` para vincular cada botón con su personaje.
+- 24 métodos individuales para cada personaje (muy fácil de editar).
 
 ---
 
-## 🧠 Objetivo del proyecto
+## 🎓 Proyecto ideal para estudiantes de DAW / DAM
 
-Este fue mi **primer programa creado completamente desde cero** en Java, y lo desarrollé con el propósito de:
+Este proyecto te enseña:
 
-- Aprender a crear una **ventana gráfica con Swing**.  
-- Practicar el uso de **botones, eventos y condiciones lógicas**.  
-- Desarrollar la estructura y flujo de un pequeño juego funcional.  
+- POO aplicada ✔️  
+- Gestión de eventos con `ActionListener` ✔️  
+- Uso de layouts de Swing (`BorderLayout`, `GridLayout`) ✔️  
+- Manejo de imágenes (`ImageIcon`, escalado, BufferedImage) ✔️  
+- Refactorización avanzada ✔️  
+- Cómo estructurar un proyecto Java real ✔️  
 
-Aunque está lejos de ser perfecto, le tengo mucho cariño y me ha servido como base para mejorar mis habilidades en **Java y programación estructurada**.
+Perfecto para trabajos de clase, prácticas o ampliar tu portfolio.
 
 ---
 
-## 💻 Tecnologías y librerías utilizadas
+## 🎬 Video explicativo (20 min)
 
-- ☕ **Java**
-- 🎨 **Swing** (interfaz gráfica)
-- 🧩 **AWT**
-- 📦 **Colecciones** (`List`, `Map`, `HashMap`, `Random`)
+Aquí podrás ver:
 
-```java
-import javax.swing.*;
-import java.awt.*;
-import java.awt.image.BufferedImage;
-import java.util.List;
-import java.util.Random;
-import java.util.Map;
-import java.util.HashMap;
+- El juego funcionando  
+- Explicación detallada del código  
+- Cómo modificar personajes, imágenes y atributos  
+- Cómo extender el juego  
+
+🔗 **ENLACE AL VIDEO:** *(Lo añadirás cuando lo subas)*
+
+---
+
+## 📂 Estructura del proyecto
+
