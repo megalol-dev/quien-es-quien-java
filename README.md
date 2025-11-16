@@ -81,13 +81,11 @@ Aquí podrás ver:
 ## 🧠 Cómo ejecutar el proyecto
 
 1. Clona el repositorio:
-   ```bash
-   git clone https://github.com/TU-USUARIO/TU-REPO.git
 
-    Abre el proyecto en Eclipse, IntelliJ o NetBeans.
+- git clone https://github.com/TU-USUARIO/TU-REPO.git
 
-    Ejecuta la clase:
+- Abre el proyecto en Eclipse, IntelliJ o NetBeans.
 
-    InterfazJuego.main()
+- Ejecuta la clase: InterfazJuego.main()
 
 ¡Y a jugar!
