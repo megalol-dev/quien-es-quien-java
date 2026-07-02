@@ -87,3 +87,18 @@ Clona el repositorio:
 - Abre el proyecto en Eclipse, IntelliJ o NetBeans.
 - Ejecuta la clase: InterfazJuego.main()
 - ¡Y a jugar! 🎉😁
+
+---
+
+# 📫 Contacto
+
+📧 Email: **escuderopolojoseluis@gmail.com**
+
+🌐 Portfolio: https://megalol-dev.github.io/
+
+💼 LinkedIn: https://linkedin.com/in/jose-luis-escudero-polo
+
+
+📺 YouTube: https://www.youtube.com/@Megalol-dev
+
+---
