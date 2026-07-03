@@ -100,5 +100,3 @@ Clona el repositorio:
 
 
 📺 YouTube: https://www.youtube.com/@Megalol-dev
-
----
